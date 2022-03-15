@@ -1,0 +1,156 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    padding-top: 200px;
+    justify-content: center;
+    background-color: beige;
+}
+
+
+div.container-global {
+    position: relative;
+    padding: 130px;
+    display: flex;
+    width: 50vh;
+    height: 50%;
+    border-radius: 10px;
+    background-color: #1a638d;
+    box-shadow: 30px 30px  30px 5px rgb(183, 206, 206);
+}
+
+
+div.contenu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+ div.contenu input[type=text]{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    padding-left: 10px; 
+    border-radius: 5px;
+    width: 25%; 
+    height: 25px;
+    border-color: rgb(8, 8, 8);
+    border-width: 2px;
+    overflow: hidden;
+    color: rgb(14, 11, 11);
+} 
+
+
+div.contenu input[type=button]{
+    position: absolute;
+    text-align: center;
+    left: 25px;
+    top: 5px;
+    border-radius: 5px;
+    width: 130px; 
+    height: 25px;
+    border-color: rgb(8, 8, 8);
+    border-width: 2px;
+    overflow: hidden;
+    color: rgb(14, 11, 11);
+    font-family: fantasy;
+
+} 
+
+div.meteo {
+    position: absolute;
+    left:15px;
+    top: 50px;
+    width: 95%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    /* background:  red; */
+}
+
+li {
+    list-style-type: none;
+}
+
+
+p#degres {
+    font-size: 3em;
+    color : #f2f2f2;
+}
+
+#degres ::after {
+    content: " ° C ";
+    color: #f2f2f2;
+}
+
+#vent , #pression {
+    color: #f2f2f2;
+}
+
+#vent ::before {
+    content : " Vent: ";
+    color : #f2f2f2;
+
+}
+
+#pression ::before {
+    content : "Pression: ";
+    color : #f2f2f2;
+    
+}
+
+
+#pression ::after {
+    content : " mb";
+    color : #f2f2f2;
+    
+}
+
+#vent ::after {
+    content : " Km\h";
+    color : #f2f2f2;
+}
+
+
+.wi-day-sunny:before {
+    content: "\f00d";
+    color: #f2f2f2;
+    font-size: 100px;
+}
+
+.wi-day-cloudy:before {
+    content: "\f002";
+    color: #f2f2f2;
+    font-size: 100px;
+}
+
+.wi-day-rain:before {
+    content: "\f008";
+    color: #f2f2f2;
+    font-size: 100px;
+}
+
+.wi-day-haze:before {
+    content: "\f008";
+    color: #f2f2f2;
+    font-size: 100px;
+}
+
+
+
+li#logo {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+p#description {
+    padding-top : 25px;
+    text-align: center;
+    color: #f2f2f2;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="https://img.icons8.com/plasticine/100/000000/apple-weather.png"/>
+    <title>API METEO</title>
+<body>
+    <div class="container-global">
+        <div class="contenu">
+            <input type="button" value="Valider" onclick ="getApiMeteo()" />
+
+            <input type="text" id="mylocality"/>
+        </div>
+    
+        <div class="meteo">
+            <ul class="details-meteo">
+                <li id="logo">
+                    <i class="wi"></i>
+                    <p id="description">Brume</p>
+                </li>
+            
+            </ul>
+            <p id="degres">10° C</p>
+            <ul class="other-details-meteo">
+                <li id="vent">vent</li>
+                <li id="pression">pressiion</li>
+            </ul>
+        </div>    
+    </div>
+      
+    <script src="assets/js/api.js"></script> 
+</body>
+</html>
